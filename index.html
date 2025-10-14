@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LSTM Stock Price Predictor</title>
+</head>
+<body>
+    <h2>📈 LSTM Stock Price Predictor</h2>
+
+    <form action="/predict" method="POST">
+        <label>Enter 60 comma-separated closing prices:</label><br><br>
+        <textarea name="data" rows="5" cols="100"></textarea><br><br>
+        <input type="submit" value="Predict">
+    </form>
+
+    <h3>{{ prediction_text }}</h3>
+
+    {% if chart_url %}
+        <h3>📊 Prediction Chart:</h3>
+        <img src="{{ chart_url }}" alt="Prediction Chart" style="width: 100%; max-width: 600px;">
+    {% endif %}
+</body>
+</html>
