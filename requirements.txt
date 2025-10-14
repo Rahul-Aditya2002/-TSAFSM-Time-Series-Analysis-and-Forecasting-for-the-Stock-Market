@@ -1,0 +1,11 @@
+Flask
+tensorflow
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+statsmodels
+prophet
+yfinance
+joblib
